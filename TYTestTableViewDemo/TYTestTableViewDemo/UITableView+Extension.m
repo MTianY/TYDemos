@@ -11,19 +11,22 @@
 
 static NSString * const cellID_01 = @"TYTestTableViewCell01";
 static NSString * const cellID_02 = @"TYTestTableViewCell02";
+static NSString * const cellID_03 = @"TYTestTableViewCell03";
 
 @implementation UITableView (Extension)
 
 - (NSArray *)cellIDArray {
     return @[
              cellID_01,
-             cellID_02
+             cellID_02,
+             cellID_03
              ];
 }
 
 - (void)registCell {
     [self registerClass:NSClassFromString(cellID_01) forCellReuseIdentifier:cellID_01];
     [self registerClass:NSClassFromString(cellID_02) forCellReuseIdentifier:cellID_02];
+    [self registerClass:NSClassFromString(cellID_03) forCellReuseIdentifier:cellID_03];
 }
 
 - (UITableViewCell *)ty_dequeueReusableCellWithIndexPath:(NSIndexPath *)indexPath {
