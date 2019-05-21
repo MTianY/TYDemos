@@ -17,6 +17,7 @@
 		4C7EED622292E07800F83719 /* TYTestTableViewCell01.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7EED612292E07800F83719 /* TYTestTableViewCell01.m */; };
 		4C7EED652292E08000F83719 /* TYTestTableViewCell02.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7EED642292E08000F83719 /* TYTestTableViewCell02.m */; };
 		4C7EED68229437B200F83719 /* TYTestTableViewCell03.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7EED67229437B200F83719 /* TYTestTableViewCell03.m */; };
+		4C7EED6C2294457B00F83719 /* TYTestTableViewCell04.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7EED6A229444C300F83719 /* TYTestTableViewCell04.m */; };
 		60E40D3AD0F0F44877FB3F4E /* libPods-TYTestTableViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E6F44F1237C820BB9594E2 /* libPods-TYTestTableViewDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,8 @@
 		4C7EED642292E08000F83719 /* TYTestTableViewCell02.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYTestTableViewCell02.m; sourceTree = "<group>"; };
 		4C7EED66229437B200F83719 /* TYTestTableViewCell03.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYTestTableViewCell03.h; sourceTree = "<group>"; };
 		4C7EED67229437B200F83719 /* TYTestTableViewCell03.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYTestTableViewCell03.m; sourceTree = "<group>"; };
+		4C7EED69229444C300F83719 /* TYTestTableViewCell04.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYTestTableViewCell04.h; sourceTree = "<group>"; };
+		4C7EED6A229444C300F83719 /* TYTestTableViewCell04.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYTestTableViewCell04.m; sourceTree = "<group>"; };
 		55E6F44F1237C820BB9594E2 /* libPods-TYTestTableViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYTestTableViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1F1B4C85AFF1963E87E457 /* Pods-TYTestTableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYTestTableViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TYTestTableViewDemo/Pods-TYTestTableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F3BEB4CCE8F4E91522C3E324 /* Pods-TYTestTableViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYTestTableViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TYTestTableViewDemo/Pods-TYTestTableViewDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 				4C7EED642292E08000F83719 /* TYTestTableViewCell02.m */,
 				4C7EED66229437B200F83719 /* TYTestTableViewCell03.h */,
 				4C7EED67229437B200F83719 /* TYTestTableViewCell03.m */,
+				4C7EED69229444C300F83719 /* TYTestTableViewCell04.h */,
+				4C7EED6A229444C300F83719 /* TYTestTableViewCell04.m */,
 				4C7EED5F2292E05100F83719 /* TYTableViewProtocol.h */,
 				4C7EED4C2292DDB200F83719 /* Main.storyboard */,
 				4C7EED4F2292DDB400F83719 /* Assets.xcassets */,
@@ -238,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C7EED6C2294457B00F83719 /* TYTestTableViewCell04.m in Sources */,
 				4C7EED652292E08000F83719 /* TYTestTableViewCell02.m in Sources */,
 				4C7EED4B2292DDB200F83719 /* ViewController.m in Sources */,
 				4C7EED622292E07800F83719 /* TYTestTableViewCell01.m in Sources */,

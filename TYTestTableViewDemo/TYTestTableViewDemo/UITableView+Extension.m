@@ -13,6 +13,7 @@
 static NSString * const cellID_01 = @"TYTestTableViewCell01";
 static NSString * const cellID_02 = @"TYTestTableViewCell02";
 static NSString * const cellID_03 = @"TYTestTableViewCell03";
+static NSString * const cellID_04 = @"TYTestTableViewCell04";
 
 @implementation UITableView (Extension)
 
@@ -29,7 +30,8 @@ static NSString * const cellID_03 = @"TYTestTableViewCell03";
     self.cellIDsArray = @[
                           cellID_01,
                           cellID_02,
-                          cellID_03
+                          cellID_03,
+                          cellID_04
                           ];
     
     
