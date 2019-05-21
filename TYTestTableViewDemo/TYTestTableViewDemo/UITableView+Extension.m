@@ -14,6 +14,7 @@ static NSString * const cellID_01 = @"TYTestTableViewCell01";
 static NSString * const cellID_02 = @"TYTestTableViewCell02";
 static NSString * const cellID_03 = @"TYTestTableViewCell03";
 static NSString * const cellID_04 = @"TYTestTableViewCell04";
+static NSString * const cellID_05 = @"TYTestTableViewCell05";
 
 @implementation UITableView (Extension)
 
@@ -31,7 +32,8 @@ static NSString * const cellID_04 = @"TYTestTableViewCell04";
                           cellID_01,
                           cellID_02,
                           cellID_03,
-                          cellID_04
+                          cellID_04,
+                          cellID_05
                           ];
     
     
