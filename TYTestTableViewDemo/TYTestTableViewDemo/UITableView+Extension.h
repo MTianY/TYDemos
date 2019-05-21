@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UITableView (Extension)
 
+@property (nonatomic, strong) NSArray *cellIDsArray;
+
 - (void)registCell;
 - (__kindof UITableViewCell *)ty_dequeueReusableCellWithIndexPath:(NSIndexPath *)indexPath;
 

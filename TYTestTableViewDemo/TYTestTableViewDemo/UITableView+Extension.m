@@ -8,6 +8,7 @@
 
 #import "UITableView+Extension.h"
 #import "TYTableViewProtocol.h"
+#import <objc/runtime.h>
 
 static NSString * const cellID_01 = @"TYTestTableViewCell01";
 static NSString * const cellID_02 = @"TYTestTableViewCell02";
@@ -15,22 +16,31 @@ static NSString * const cellID_03 = @"TYTestTableViewCell03";
 
 @implementation UITableView (Extension)
 
-- (NSArray *)cellIDArray {
-    return @[
-             cellID_01,
-             cellID_02,
-             cellID_03
-             ];
+- (void)setCellIDsArray:(NSArray *)cellIDsArray {
+    objc_setAssociatedObject(self, @selector(cellIDsArray), cellIDsArray, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (NSArray *)cellIDsArray {
+    return objc_getAssociatedObject(self, @selector(cellIDsArray));
 }
 
 - (void)registCell {
-    [self registerClass:NSClassFromString(cellID_01) forCellReuseIdentifier:cellID_01];
-    [self registerClass:NSClassFromString(cellID_02) forCellReuseIdentifier:cellID_02];
-    [self registerClass:NSClassFromString(cellID_03) forCellReuseIdentifier:cellID_03];
+    
+    self.cellIDsArray = @[
+                          cellID_01,
+                          cellID_02,
+                          cellID_03
+                          ];
+    
+    
+    for (NSString *cellID in self.cellIDsArray) {
+        [self registerClass:NSClassFromString(cellID) forCellReuseIdentifier:cellID];
+    }
+    
 }
 
 - (UITableViewCell *)ty_dequeueReusableCellWithIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell<TYTableViewProtocol> *cell = [self dequeueReusableCellWithIdentifier:[self cellIDArray][indexPath.row] forIndexPath:indexPath];
+    UITableViewCell<TYTableViewProtocol> *cell = [self dequeueReusableCellWithIdentifier:self.cellIDsArray[indexPath.row] forIndexPath:indexPath];
     return cell;
 }
 
